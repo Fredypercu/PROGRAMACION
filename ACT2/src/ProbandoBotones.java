@@ -37,7 +37,7 @@ public class ProbandoBotones extends JFrame {
 	 */
 
 	public ProbandoBotones() {
-		setTitle("Probando Botones");
+		setTitle("ProbandoBotones");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -55,19 +55,21 @@ public class ProbandoBotones extends JFrame {
 		contentPane.add(caja2);
 		caja2.setColumns(10);
 		
-		boton = new JButton("->");
+		boton = new JButton("-->");
 		boton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				caja2.setText(caja.getText());
+				caja.setText("");
 			}
 		});
 		boton.setBounds(162, 90, 89, 23);
 		contentPane.add(boton);
 		
-		boton2 = new JButton("<-");
+		boton2 = new JButton("<--");
 		boton2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				caja.setText(caja2.getText());
+				caja2.setText("");
 			}
 		});
 		boton2.setBounds(162, 167, 89, 23);
