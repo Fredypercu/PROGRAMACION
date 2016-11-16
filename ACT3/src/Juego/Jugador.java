@@ -1,6 +1,9 @@
 package Juego;
 
 public class Jugador {
+	
+	//Propiedades
+	
 	private String nombre;
 	private String apellidos;
 	private String apellido1;
@@ -9,7 +12,7 @@ public class Jugador {
 	private int puntos;
 	private int id;
 	
-	
+	//Punto de entrada que se ejeuta al crear un objeto de tipo Jugador
 	//Métodos Getters and Setters
 	
 	public String getNombre() {
@@ -85,6 +88,10 @@ public class Jugador {
 	public Jugador(){
 	
 	}
+	
+	
+	//Constructor
+	// Punto de entrada que se ejecuta al crear un objeto de tipo jugador
 	
 	public String toString(){
 		
