@@ -14,6 +14,7 @@ public class Jugador {
 	//Punto de entrada que se ejeuta al crear un objeto de tipo Jugador
 	
 	public Jugador(String nom, String ape1, String ape2, Integer eda){
+		// Método comprueba introducido en edad, si es menor a 0, devolverá msn de error
 		
 		if (eda<=0) {
 			throw new IllegalArgumentException("Has introducido una edad invalida");

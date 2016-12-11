@@ -31,10 +31,6 @@ public class Juego extends JFrame {
 	private JTextField textEdad;
 	private JTextField cajaMSN;
 
-	
-	//La entrada a nuestro programa
-	//Es el método main
-	
 		
 		//Generaremos un nuevo jugador
 		
@@ -133,7 +129,8 @@ public class Juego extends JFrame {
 							Login l =new Login(j);
 							//Con esta linea hacemos que la ventana se muestre.
 							l.setVisible(true);
-						}				
+						}	
+						// Mensaje que se lanza si la edad es -0, por eso uso del Try and Catch(excepción)
 					} catch(Exception e) {
 						cajaMSN.setText("Has introducido un valor de edad invalido");
 						}

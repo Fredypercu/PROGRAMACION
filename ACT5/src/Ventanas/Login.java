@@ -21,10 +21,15 @@ public class Login extends JFrame {
 
 	//Creacion de la ventana
 	public Login(Jugador j) {
+		
+		// referencia a nuevo jugador creado que cogerá los datos introducidos si son correctos
 		this.jug=j;
 		
 		//Título de la ventana
 		setTitle("Inicio");
+		
+		//Propiedades nueva ventana que se lanzará al pulsar botón "A Jugar" si todos los datos son correctos del registro del nuevo jugador
+		// Segunda ventana, es Ventana Juego
 				
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 370);
