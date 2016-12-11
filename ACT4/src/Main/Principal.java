@@ -1,3 +1,4 @@
+
 package Main;
 
 import java.awt.BorderLayout;
@@ -139,6 +140,7 @@ public class Principal extends JFrame {
 						
 						//Método para asegurar que todos los labels están rellenados
 						//Si faalta alfún campo, devolverá texto de ´´por vaor......//
+					try{
 						if(textNombre.getText().equals("") || textApellido1.getText().equals("") || textApellido2.getText().equals("") || textEdad.getText().equals("")){
 							cajaMSN.setText("Por favor, rellene todos los campos para iniciar partida ");
 							
@@ -146,9 +148,13 @@ public class Principal extends JFrame {
 						}else{
 							Jugador j = new Jugador(textNombre.getText(), textApellido1.getText(), textApellido2.getText(), Integer.valueOf(textEdad.getText()));
 							cajaMSN.setText(" Nuevo Jugador: "+j.getNombre()+" "+j.getApellido1()+" "+j.getApellido2()+","+" " +j.getEdad()+ " años"+", creado correctamente!!");
+							
+						}				
+					} catch(Exception e) {
+						cajaMSN.setText("Has introducido un valor de edad invalido");
 						}
 						
-					}	
+					}		
 				});
 				btnAJUGAR.setBounds(10, 189, 464, 25);
 				contentPane.add(btnAJUGAR);

@@ -15,6 +15,12 @@ public class Jugador {
 	
 	public Jugador(String nom, String ape1, String ape2, Integer eda){
 		
+		if (eda<=0) {
+			throw new IllegalArgumentException("Has introducido una edad invalida");
+			
+			
+		}
+		
 		nombre=nom;
 		apellido1=ape1;
 		apellido2=ape2;
@@ -59,6 +65,9 @@ public class Jugador {
 
 
 	public void setEdad(int eda) {
+		if (eda<=0) {
+			throw new IllegalArgumentException("Has introducido una edad invalida");
+		}
 		this.edad = eda;
 	}
 
