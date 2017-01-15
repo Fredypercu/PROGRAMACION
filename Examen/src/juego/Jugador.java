@@ -1,4 +1,4 @@
-package juego;
+package juego; 
 
 public class Jugador {
 	//Atributos (o propiedades)
